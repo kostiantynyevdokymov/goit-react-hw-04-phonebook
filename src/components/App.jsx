@@ -79,7 +79,7 @@ const App = () => {
         notEmptyList={setContacts.length}
         valueFilter={setFilter}
       />
-      {this.state.contacts.length > 0 ? (
+      {contacts.length > 0 ? (
         <Contacts
           name="Contacts"
           contactsList={visibleContacts}
