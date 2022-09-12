@@ -12,16 +12,9 @@ const App = () => {
   });
 
   const [filter, setFilter] = useState('');
-  // state = {
-  //   contacts: [],
-  //   filter: '',
-  // };
 
   const handleChange = event => {
     setFilter(event.currentTarget.value);
-
-    // const { name, value } = event.currentTarget;
-    // this.setState({ [name]: value });
   };
 
   const formSubmitHandle = data => {
@@ -45,21 +38,6 @@ const App = () => {
   const onClickDelete = id => {
     setContacts(contacts.filter(contacts => contacts.id !== id));
   };
-
-  // componentDidMount() {
-  //   // const contacts = localStorage.getItem('contacts');
-  //   // const parsedContacts = JSON.parse(contacts);
-  //   if (parsedContacts) {
-  //     this.setState({ contacts: parsedContacts });
-  //   }
-  // }
-
-  // componentDidUpdate(prevState) {
-  //   if (this.state.contacts !== prevState.contacts) {
-  //     // console.log(this.state.contacts);
-  //     localStorage.setItem('contacs', JSON.stringify(this.state.contacs));
-  //   }
-  // }
 
   const normalizeFilter = filter.toLowerCase();
   const visibleContacts = contacts.filter(contacts =>

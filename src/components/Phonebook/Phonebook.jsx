@@ -5,10 +5,6 @@ import LabelPhonebook from './Label/Label';
 import InputNumber from './Input/Number/InputNumber';
 import ButtonSubmit from './Button/ButtonSubmit';
 const Phonebook = ({ onSubmit }) => {
-  // state = {
-  //   name: '',
-  //   number: '',
-  // };
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
@@ -23,10 +19,6 @@ const Phonebook = ({ onSubmit }) => {
       default:
         return;
     }
-    // const { name, value } = event.currentTarget;
-    // this.setState({
-    //   [name]: value,
-    // });
   };
 
   const reset = () => {

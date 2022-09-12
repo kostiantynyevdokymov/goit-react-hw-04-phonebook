@@ -15,5 +15,3 @@ export const MainPage = styled.div`
     font-size: 40px;
   }
 `;
-
-// export default MainPage;
